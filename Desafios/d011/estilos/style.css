@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+html {
+    min-height: 100%;
+    background-image: url('../imagens/espaco-pq.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+div {
+    text-align: center;
+    margin: auto;
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
+
+img {
+    max-width: 500px;
+}
