@@ -4,68 +4,81 @@
 
 :root {
     --fonte-titulo: 'Passion One', sans-serif;
-    --fonte-poema: 'Sriracha', cursive;
+    --fonte-cordel: 'Sriracha', cursive;
 }
 
 * {
-    margin: 0px;
     padding: 0px;
+    margin: 0px;
 }
 
 body {
-    background-color: skyblue;
+    background-color: lightblue;
 }
 
 header {
     background-color: black;
     color: white;
     text-align: center;
-    font-weight: normal;
-    padding: 30px 0px;
-    margin: auto;
-    max-width: 600px;
-    border: 2px solid black;
+    font-family: var(--fonte-titulo);
+    font-size: 2em;
+    padding: 40px 0px;
 }
 
 header h1 {
-    font-family: var(--fonte-titulo);
-    font-size: 2.4em;
+    margin: auto;
+    max-width: 520px;
 }
 
-header span.grande {
+header span {
     font-size: 1.4em;
+}
+
+header p {
+    font-size: 0.7em;
+    font-weight: normal;
 }
 
 header a {
     color: white;
     text-decoration: none;
+    font-family: var(--fonte-titulo);
+}
+
+header a:hover {
+    color: lightblue;
 }
 
 main {
-    max-width: 600px;
-    margin: auto;
     background-color: white;
-    border: 2px solid black;
+    font-family: var(--fonte-cordel);
+    font-size: 1.5em;
 }
 
 main p {
-    font-family: var(--fonte-poema);
-    font-size: 1.5em;
-    padding: 60px 0px 0px 20px;
+    padding: 20px 20px;
+    padding-top: 80px;
 }
 
-main div {
-    margin-top: 60px;
-    max-width: 600px;
-    height: 560px;
-    background-image: url('../imagens/Background_fofo-m.png');
-}
-
-main #sobre {
-    background-color: rgba(0, 0, 0, 0.32);
+p.transparente {
+    background-color: rgba(0, 0, 0, 0.281);
+    max-width: 280px;
     color: white;
-    display: inline-block;
     padding-top: 0px;
-    padding-right: 20px;
-    margin-top: 60px;
+}
+
+section.fundo {
+    background: lightblue center center no-repeat fixed;
+    background-size: cover;
+    height: 600px;
+    padding-top: 100px;
+    margin-top: 80px;
+}
+
+section#flor {
+    background-image: url('../imagens/background001.jpg');
+}
+
+section#livro {
+    background-image: url('../imagens/background002.jpg');
 }
